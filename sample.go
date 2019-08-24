@@ -12,7 +12,7 @@ func matPrint(X mat.Matrix) {
 
 func CreateVector() {
 	u := mat.NewVecDense(3, []float64{1, 2, 3})
-	fmt.Printf("u: ")
+	println("u: ")
 	matPrint(u)
 }
 
