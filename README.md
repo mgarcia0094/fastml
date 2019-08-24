@@ -21,10 +21,10 @@
 	-Bayesian Network
 
 **5.Clustering algorithms**
-	-K-Means
-	-K-Medians
-	-Hierarchical Clustering
+ - K-Means
+ - K-Medians
+ - Hierarchical Clustering
 
 **6.Neural algorithms**
-	-Perceptron
+ - Perceptron
 
