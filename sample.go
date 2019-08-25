@@ -10,10 +10,11 @@ func matPrint(X mat.Matrix) {
  fmt.Printf("%v\n", fa)
 }
 
-func CreateVector() {
+func CreateVector() (*mat.VecDense) {
 	u := mat.NewVecDense(3, []float64{1, 2, 3})
-	println("u: ")
-	matPrint(u)
+	//println("u: ")
+	//matPrint(u)
+	return u
 }
 
 
