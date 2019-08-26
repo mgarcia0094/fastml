@@ -5,13 +5,24 @@ import (
 	"gonum.org/v1/gonum/mat"
 )
 
+
+//Linear Regression struct
 type linearRegression struct {
-	coef_ float64
-	intercept_ float64
+	l_r float64
+	n_iter uint
+	epsilon float64
+	gamma *mat.VecDense
+	beta *mat.VecDense
 }
 
-func NewLinearRegression() (*linearRegression) {
-	return &linearRegression{0, 0}
+//Constructor linear regression
+//
+//Params:
+//	l_r: learning rate
+//	n_iter: number of iteration fit
+//	epsilon : error max tolerate
+func NewLinearRegression(l_r float64, n_iter uint, epsilon float64) *linearRegression {
+	return &linearRegression{l_r, n_iter, epsilon, nil, nil}
 }
 
 func (l_r *linearRegression) Fit (X_train *mat.VecDense, Y_train *mat.VecDense) error {
